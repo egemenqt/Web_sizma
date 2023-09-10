@@ -1,0 +1,45 @@
+TARAMA HIZLARINI BELİRLER
+
+T5 INSANE 
+T4 AGGRESSİVE
+T3 NORMAL
+T2 POLİTE
+T1 SNEAKY
+T0 PARANOİD
+
+eğer hızlı tararsan sonuççlar yanıltıcı olabilir
+eğer yavaş tararsan sonuçlar daha doğru çıkar
+
+----------------------------------------------
+nmap -T5 <internet adress> en hızlı tarama biçimidir(parametre değişebilir örneğin T4,T3)
+
+---------------------------------------------
+
+nmap --max-hostgroup 1(kaç makineyi taramak istersen 1 yerine onu girebilirsin) -iL <file>
+
+-------------------------------------------
+
+nmap --host-timeout 5(s/m/h) <internet adress>  taramanın süresini belirler
+
+-----------------------------------------------
+
+nmap --max-rate 50(max paket sayısı) <internet adress> paket sayısını belirler(fazla girersen anonim olamazsın)
+SANİYEDE GÖNDERİLEN PAKET SAYISINI BELİRLER
+-----------------------------------------------
+
+nmap --min-rate 50 <internet adress>
+
+aynısısnın minimum hali
+------------------------------------------
+
+nmap --max-retries <internet adress> 
+
+tekrar gönderilmek istenen paket sayısını belirler
+DENEME AZ OLURSA HATA PAYI FAZLA OLUR
+------------------------------------------
+
+
+
+
+
+

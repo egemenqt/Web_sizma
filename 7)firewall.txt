@@ -1,0 +1,29 @@
+İDS:saldırı tespit sistemi
+firewalldarn kaçmak için:
+
+-------------------------------------------
+-f:gönderilen tcp paketlerini ayarlamamızı sağlar paket boyutunu ayarlamamızı sağlar
+firewalldan kaçabilir(nmap kendi ayarlar)
+------------------------------------------
+--mtu: paketleri kendimizin ayarlamasını sağlar
+(8'in katları olacak!!)
+---------------------------------------------
+hedef üzerinde bazen ip logları bırakabiliyoruz
+bu yüzden sahte ip adresi ile hedefi yemliyoruz
+
+-D:hedefi yemler
+kullanım: -D <sahte ip>
+veya
+-D RND 5 rastgele ip adresi tarar(kendi ipin'de gider)
+
+daha anonimlik sağlar
+---------------------------------------------
+MAC ADRESİ GİZLEMEK
+
+--spoof-mac <mac>
+
+mac adresini gizlemeni sağlar (kendin rastgele mac adresi kullanır veya marka mac kullanabilirsin)
+
+--spoof-mac 0 =>buda rastgele mac adresi atar
+
+----------------------------------------------

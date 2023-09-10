@@ -1,0 +1,41 @@
+hedef sistem üzerinde port taraması yapmamızı sağlar
+--------------------------------------------
+nmap <internet adresi> (internet adresinin portunu tarar)
+--------------------------------------------
+
+belirli portu tarama:
+---------------------------------------------
+nmap -p 23 <internet adresi> (adresteki belirtilen  23. portu tarar)
+--------------------------------------------
+
+nmap -p 21,22 <internet adresi>  (21 ve 22 tarar)
+
+--------------------------------------------
+nmap -p 21-50 <internet adresi> (21-50 arasındaki portları tarar)
+------------------------------------------
+
+nmap --exclude-ports 100-200  (100 ile 200 arasındaki portlar hariç tüm portları tarar)
+---------------------------------------------
+
+nmap -p- <internet sitesi>   tüm portları tarar
+
+-----------------------------------------------
+
+nmap -p http <adress>  protokoller üzerinden tarama yapılabilir
+---------------------------------------------
+nmap -p http??? <adress> eğer protokolün tamamını bilmiyosan nmap senin için bulur
+-----------------------------------------------
+
+nmap -F <adress> en popüler 100 portu tarar
+hızlıdır
+
+----------------------------------------
+nmap --top-ports 200 <adress> en popüler belirtilen sayı kadar portu tarar(yani 200)
+random tarar
+
+----------------------------------------------
+nmap -r -p 20-60 <adress> sırası ile portları tarar
+-----------------------------------------
+
+
+

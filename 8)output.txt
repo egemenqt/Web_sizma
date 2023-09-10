@@ -1,0 +1,51 @@
+taranan cihazı not eden formattır
+-----------------------------------------
+nmap .... .... -oN nmap_tarama.txt
+dosyanın adını kendin belirleyebilirsin
+taramayı normal şekilde not eder
+en çok kullanılan budur
+ekrana verdiği çıktının aynısını yazdırır
+---------------------------------------
+nmap ........... -oX nmap_tarama.txt
+XML şeklinde not eder
+-------------------------------------
+
+nmap .... ..... -oA major
+
+burada major adında 3 dosya kaydeder ve 	gnmap nmap ve xml şeklinde dosya yazdırır
+daha ayrıntılı bilgiler verir
+------------------------------------------
+
+nmap ... .... ... --reason hedeflerin durumlalrını
+sebeplerini yazar not etmez!!
+
+-------------------------------------
+
+nmap ...... --stats-every 5s 
+
+her 5 saniyede bir tarama yüzdesini yazdırır
+
+
+---------------------------------------------
+
+nmap ... .... --packet-trace 
+
+burada gelen giden paketleri yazdırır
+
+
+-------------------------------------------
+
+nmap ..... ..... .... --open
+
+sadece açık portları ekrana verir
+
+-----------------------------------------------
+
+
+
+
+
+
+
+
+

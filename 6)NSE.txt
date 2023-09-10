@@ -1,0 +1,65 @@
+SCRIPT nmap içerisinden bulunan ayrıntılı bilgiler sağlayan özel yazılımlar
+
+DOSYA YOLU:
+/usr/share/nmap/scripts/scripts.db
+
+--------------------------------------------
+
+SAFE    =HEDEF KAYNAKLARI ETKİLEMEZ
+
+INTRUSIVE=HEDEF KAYNAKLARI ETKİLEYEBİLİR
+
+VULN    =GÜVENLİK AÇIKLARINI TESPİT EDER
+
+
+EXPLOIT =GÜVENLİK AÇIKLARINDAN YARARLANIR
+
+AUTH 	= KİMLİK BİLGİLERİNİ BYPASS ETMEK İÇİN KULLANILIR
+
+BRUTE=KİMLİK BİLGİLERİNİ TAHMİN ETMEK İÇİN BRUTE FORCE SALDIRISINI KULLANIR
+
+DISCOVERY=AĞ HAKKINDA KEŞİF YAPMAK İÇİN KULLANILIR
+
+DEFAULT =HEDEF SİSTEM ÜZERİNDE VARSAYILAN OLARAK BELİRLENMİŞ SCRİPTLERİ ÇALIŞTIRIR
+
+neden default katagorisini kullanırız:
+-hız
+-kullanışlılık
+-ayrıntı
+-gizlilik
+-müdahalelik
+
+
+
+KULLANIM:
+------------------------------------
+nmap --scrpit=default <internet adresi>
+tüm scriptleri dener
+veya
+nmap -sC <internet adresi>
+----------------------------------------
+nmap --script vuln(diğer scriptler içinde kullanılabilir)
+
+--------------------------------------------
+birden fazlası için
+
+nmap --script "vuln,auth,expploit" <internet adresi>
+
+------------------------------------------
+nmap --script-http-* <internet adresi>
+HTTP YERİNE BAŞKA PROTOKOL KULLANILABİLİR
+*'DAN SONRASINI TÜM SCRİPTLERİ DENER
+
+
+-------------------------------------------
+
+ nmap --script "not ssh*" <internet adresi>
+ ssh hariç tüm scriptleri alır
+ --------------------------------------------
+ 
+ nmap --script "(default or exploit) and not http" <internet adresi>
+ burada default ve exploit alır ancak http almaz
+ 
+ ----------------------------------------------
+ 
+

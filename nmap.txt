@@ -1,0 +1,21 @@
+ağ içi ve ağ dışı haritalar 
+en çok ağ dışı saldırılarda kullanılır
+herhangi sunucunun pc ip verilerek tarama yapılabilir
+atıllan istek belli olabilir
+hangi portların açık olduğunu cihazın mac adresini verir
+
+
+nmap en popüler 1000 ip'yi tarar
+
+
+KULLANMA:
+
+nmap <hangi ipye istek atacağımız>
+
+
+özet:
+
+nmap 10.0.2.0/24(sanal ağ)
+nmap 192.168.1.0/24(tr'de)
+
+ 

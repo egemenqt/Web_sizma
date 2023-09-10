@@ -1,0 +1,35 @@
+hedefte çalışan servis ve verison bilgilerini elde etmemiz için:
+
+
+nmap -sV <internet adress> hangi versiyonun çalıştığını tahmin eder
+
+
+------------------------------------------
+
+
+nmap -sV --version-intensity <0-9>(burada düşük rakam verirsek versiyonu bulma ihtimali azalır eğer yüksek verirsek versiyonu bulma ihtimali artar)>  <internet adress>
+
+----------------------------------------------
+İŞLETİM SİSTEMİ TESPİTİ:
+
+nmap -O <internet adress> işletim sistemini tespit etmeye yarar
+
+BUNUN İÇİN BİR ADET KAPALI VE BİR ADET AÇIK PORT BULMALI
+
+-----------------------------------------------
+nmap -O --osscan-limit <internet adress> eğer kapalı ve açık port bulamazsa osdetection bulamazsa direk sonuçları getirir
+---------------------------------------------
+
+nmap -O -max-os-tries <sayı>
+girilen sayı kadar işletim sistemini öğrenmeyi dener
+
+
+-----------------------------------
+
+
+nmap -O --osscan-guess <internet adress>  daha agresif bir tarama yapar ve sonuçların doğru olması daha olasıdır
+
+-----------------------------------------------
+
+nmap -A <internet adress> hem işletim sistemini hemde versiyonu tespit etmeye yarar
+

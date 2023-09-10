@@ -1,0 +1,51 @@
+taramak istediğimiz cihazın çalışıp çalışmadığını kontrol etmek istediğimiz konudur
+
+
+ping <adress> adres ile hedef bilgisayara gönderilip gelme süresidir
+!!güvenlik duvarı ICMP paketlerini görmez
+
+
+TERMİNAL:
+
+
+nmap -sL 192.168.1.0/24   (tarama yapmaz bağlı olduğumuz cihazların ip adresslerini gösterir)
+
+-------------------------------------------
+nmap -sn <adress> hedefin çalışır durumda olup olmadığını gösterir
+
+ICMP paketlerini firewall engelleyebilir böyle durumda:
+
+
+nmap -Pn <adress> portların durumlarını ICMP paketleri göndermeden getirir
+
+
+-----------------------------------------------
+
+nmap -PS22 -sn <adress>   -PS syn paketi göndermeden 22.portu tarar 
+
+--------------------------------------------
+
+nmap -PA -sn <adress>  ack paketlerini gönderir
+
+---------------------------------------
+nmap -PU -sn <adress>  UDP paketllerini tarar(eğer udp önlemleri anlınmadı ise değer döndürür)(-sn port taraması yapmaz)
+--------------------------------------------
+ARP PİNG
+ağ içerisindeki cihazları tanır ve ip ve mac adresslerini eşleştirir,
+
+sistemin açık ya da kapalı olup olmadığını gösterir
+
+sadece local(bağlı olduğumuz ağda çalışır)
+
+nmap -PR -sn <192.168.1.0/24>
+
+-----------------------------------------------
+TRACEROUTE 
+
+traceroute <internet adresi> burada gittiği serverleri gösterir
+
+--------------------------------------------
+
+nmap --traceroute daha kalitelidir
+
+
